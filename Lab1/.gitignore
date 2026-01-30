@@ -9,6 +9,11 @@ wheels/
 # Virtual environments
 .venv
 
+# Env files
+.env
+.env.*
+*.env
+
 #Compressed files
 *.zip
 *.tar
