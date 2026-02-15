@@ -125,7 +125,7 @@ Create custom training job in Vertex AI with:
 5. **Detailed Logging:** Comprehensive training logs
 6. **Evaluation Metrics:** Added confusion matrix and classification report
 
-## 🧹 Cleanup
+## Cleanup
 ```bash
 # Delete endpoint
 gcloud ai endpoints delete ENDPOINT_ID --region=us-central1
