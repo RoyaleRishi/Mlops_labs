@@ -2,7 +2,7 @@
 
 End-to-end MLOps pipeline for heart disease prediction using Google Cloud Vertex AI with custom scikit-learn model.
 
-## ataset
+## Dataset
 
 **Source:** [UCI Heart Disease Dataset - Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
 
