@@ -9,6 +9,7 @@ setup(
         'pandas>=1.0.0',
         'numpy>=1.18.0',
         'google-cloud-storage>=1.28.0',
+        'gcsfs>=0.6.0',
     ],
     description='Heart Disease Prediction Model Training Package',
     author='Your Name',
