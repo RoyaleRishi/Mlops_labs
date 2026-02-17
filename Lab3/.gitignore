@@ -1,0 +1,31 @@
+cat > .gitignore << 'EOF'
+# Terraform state files - contain sensitive info about infrastructure
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Variable files with actual credentials/project IDs
+terraform.tfvars
+*.auto.tfvars
+
+# Terraform directory
+.terraform/
+.terraform.lock.hcl
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# MacOS files
+.DS_Store
+EOF
