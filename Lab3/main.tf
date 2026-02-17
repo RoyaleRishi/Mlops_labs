@@ -39,7 +39,7 @@ provider "google" {
 # VM instance for ML inference API
 resource "google_compute_instance" "ml_inference_vm" {
   name         = "ml-inference-api-${var.environment}"
-  machine_type = "e2-standard-2" # 2 vCPUs, 8GB RAM for ML workloads
+  machine_type = "e2-standard-4" # Upgrade
   zone         = "${var.region}-b"
 
   tags = ["ml-api", "http-server", "https-server"]
@@ -48,13 +48,14 @@ resource "google_compute_instance" "ml_inference_vm" {
     environment = var.environment
     purpose     = "ml-inference"
     managed_by  = "terraform"
+    version     = "v2" 
   }
 
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-2204-lts"
-      size  = 20 # 20GB for OS + dependencies
-      type  = "pd-standard"
+      size  = 30 # Upgrade
+      type  = "pd-ssd" # Upgrade
     }
   }
 
@@ -64,6 +65,8 @@ resource "google_compute_instance" "ml_inference_vm" {
             apt-get update
             apt-get install -y python3-pip python3-venv nginx
             pip3 install fastapi uvicorn scikit-learn pandas numpy
+            systemctl start docker
+            systemctl enable docker
             echo "ML inference VM initialized" > /var/log/startup.log
         EOF
 
