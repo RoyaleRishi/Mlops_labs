@@ -23,7 +23,7 @@ Since service account key creation was blocked by organization policy, I used Ap
 
 ```bash
 gcloud auth application-default login
-gcloud config set project project-27f5b7d6-933d-4766-8c5
+gcloud config set project project-id
 ```
 
 ### 2. Enable Required APIs
@@ -44,7 +44,7 @@ gcloud services enable compute.googleapis.com storage.googleapis.com sqladmin.go
 
 **Created `terraform.tfvars`**:
 ```hcl
-project_id  = "project-27f5b7d6-933d-4766-8c5"
+project_id  = "project-id"
 region      = "us-east1"
 environment = "dev"
 ```
@@ -67,7 +67,7 @@ terraform apply
 ## Resources Created
 
 1. **VM Instance**: `ml-inference-api-dev` (e2-standard-2, us-east1-b)
-2. **Storage Bucket**: `project-27f5b7d6-933d-4766-8c5-ml-models-dev` with versioning enabled
+2. **Storage Bucket**: `project-id-ml-models-dev` with versioning enabled
 3. **Cloud SQL**: PostgreSQL 15 instance (db-f1-micro)
 4. **Database**: `predictions` database
 5. **Database User**: `ml_api` user
