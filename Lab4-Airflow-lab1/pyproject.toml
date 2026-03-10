@@ -1,0 +1,7 @@
+[project]
+name = "lab4-airflow-lab1"
+version = "0.1.0"
+description = "Custom Airflow lab with Gaussian mixture customer segmentation and dashboard output"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []

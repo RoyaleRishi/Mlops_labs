@@ -1,0 +1,7 @@
+segment_id,profile_name,color,description,customer_count,avg_balance,avg_purchases,avg_credit_limit,avg_payments,avg_tenure,avg_cash_advance
+3,Budget Watchers,#1f7a8c,More dependent on cash advances than card purchases.,738,599.92,245.45,1650.68,307.14,8.47,617.26
+2,Everyday Users,#bf4d28,More dependent on cash advances than card purchases.,1934,1832.65,154.44,2786.45,850.7,12.0,1020.87
+0,Planned Spenders,#6c8a2b,More dependent on cash advances than card purchases.,605,1903.87,760.96,5128.44,1708.7,9.21,2176.64
+1,Rewards Optimizers,#7a5195,Balanced card users with steady spending and repayment patterns.,3692,545.4,998.86,4118.93,1061.5,12.0,0.0
+5,Premium Flex,#ef5675,More dependent on cash advances than card purchases.,1886,3374.27,1825.37,7434.85,3627.02,12.0,2303.17
+4,High-Value Power Users,#ffa600,High-limit customers with consistently strong monthly activity.,94,5166.06,9659.94,13635.11,19641.82,11.73,7129.52

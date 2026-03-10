@@ -1,0 +1,2997 @@
+{
+  "source_path": "/opt/airflow/dags/data/file.csv",
+  "model_path": "/opt/airflow/dags/model/customer_segmentation_model.pkl",
+  "record_count": 8949,
+  "selected_components": 6,
+  "silhouette_score": 0.0657,
+  "explained_variance_ratio": [
+    0.4161,
+    0.2035
+  ],
+  "bic_scores": [
+    {
+      "components": 2,
+      "bic": 96568.79
+    },
+    {
+      "components": 3,
+      "bic": 4583.64
+    },
+    {
+      "components": 4,
+      "bic": -37121.81
+    },
+    {
+      "components": 5,
+      "bic": -39777.06
+    },
+    {
+      "components": 6,
+      "bic": -49580.12
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "description": "More dependent on cash advances than card purchases.",
+      "customer_count": 738,
+      "avg_balance": 599.92,
+      "avg_purchases": 245.45,
+      "avg_credit_limit": 1650.68,
+      "avg_payments": 307.14,
+      "avg_tenure": 8.47,
+      "avg_cash_advance": 617.26
+    },
+    {
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "description": "More dependent on cash advances than card purchases.",
+      "customer_count": 1934,
+      "avg_balance": 1832.65,
+      "avg_purchases": 154.44,
+      "avg_credit_limit": 2786.45,
+      "avg_payments": 850.7,
+      "avg_tenure": 12.0,
+      "avg_cash_advance": 1020.87
+    },
+    {
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "description": "More dependent on cash advances than card purchases.",
+      "customer_count": 605,
+      "avg_balance": 1903.87,
+      "avg_purchases": 760.96,
+      "avg_credit_limit": 5128.44,
+      "avg_payments": 1708.7,
+      "avg_tenure": 9.21,
+      "avg_cash_advance": 2176.64
+    },
+    {
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "description": "Balanced card users with steady spending and repayment patterns.",
+      "customer_count": 3692,
+      "avg_balance": 545.4,
+      "avg_purchases": 998.86,
+      "avg_credit_limit": 4118.93,
+      "avg_payments": 1061.5,
+      "avg_tenure": 12.0,
+      "avg_cash_advance": 0.0
+    },
+    {
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "description": "More dependent on cash advances than card purchases.",
+      "customer_count": 1886,
+      "avg_balance": 3374.27,
+      "avg_purchases": 1825.37,
+      "avg_credit_limit": 7434.85,
+      "avg_payments": 3627.02,
+      "avg_tenure": 12.0,
+      "avg_cash_advance": 2303.17
+    },
+    {
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "description": "High-limit customers with consistently strong monthly activity.",
+      "customer_count": 94,
+      "avg_balance": 5166.06,
+      "avg_purchases": 9659.94,
+      "avg_credit_limit": 13635.11,
+      "avg_payments": 19641.82,
+      "avg_tenure": 11.73,
+      "avg_cash_advance": 7129.52
+    }
+  ],
+  "scatter_points": [
+    {
+      "customer_id": "C16736",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.0412,
+      "pca_y": -3.031
+    },
+    {
+      "customer_id": "C14628",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -1.1391,
+      "pca_y": -1.4672
+    },
+    {
+      "customer_id": "C11161",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.3927,
+      "pca_y": -0.5916
+    },
+    {
+      "customer_id": "C11180",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.3414,
+      "pca_y": -0.7328
+    },
+    {
+      "customer_id": "C12791",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.5995,
+      "pca_y": -1.9459
+    },
+    {
+      "customer_id": "C19098",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 4.2966,
+      "pca_y": -4.7569
+    },
+    {
+      "customer_id": "C10176",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.2293,
+      "pca_y": -1.5434
+    },
+    {
+      "customer_id": "C12033",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.533,
+      "pca_y": 0.0655
+    },
+    {
+      "customer_id": "C17221",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.0736,
+      "pca_y": 0.6343
+    },
+    {
+      "customer_id": "C11253",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.5665,
+      "pca_y": 0.1982
+    },
+    {
+      "customer_id": "C11075",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -1.0802,
+      "pca_y": -1.543
+    },
+    {
+      "customer_id": "C17934",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.4429,
+      "pca_y": -0.8603
+    },
+    {
+      "customer_id": "C18308",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.8681,
+      "pca_y": -0.8705
+    },
+    {
+      "customer_id": "C13398",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.3193,
+      "pca_y": 0.3884
+    },
+    {
+      "customer_id": "C10839",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 2.0325,
+      "pca_y": -1.7888
+    },
+    {
+      "customer_id": "C16457",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 1.2232,
+      "pca_y": -1.924
+    },
+    {
+      "customer_id": "C10544",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 5.2171,
+      "pca_y": -4.1389
+    },
+    {
+      "customer_id": "C14432",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 1.0539,
+      "pca_y": -0.2994
+    },
+    {
+      "customer_id": "C11683",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 2.8483,
+      "pca_y": -4.5043
+    },
+    {
+      "customer_id": "C19097",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -1.2247,
+      "pca_y": -0.5713
+    },
+    {
+      "customer_id": "C10052",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 3.9555,
+      "pca_y": -3.2251
+    },
+    {
+      "customer_id": "C12804",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 1.7499,
+      "pca_y": -2.0748
+    },
+    {
+      "customer_id": "C19155",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.5884,
+      "pca_y": -1.8074
+    },
+    {
+      "customer_id": "C13173",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.895,
+      "pca_y": -0.1472
+    },
+    {
+      "customer_id": "C13023",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 5.5656,
+      "pca_y": -2.4724
+    },
+    {
+      "customer_id": "C12131",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 2.1124,
+      "pca_y": -2.4373
+    },
+    {
+      "customer_id": "C15062",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.595,
+      "pca_y": 0.429
+    },
+    {
+      "customer_id": "C14098",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -1.2537,
+      "pca_y": -1.6456
+    },
+    {
+      "customer_id": "C19013",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.3341,
+      "pca_y": -0.2753
+    },
+    {
+      "customer_id": "C17159",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.3062,
+      "pca_y": -2.2004
+    },
+    {
+      "customer_id": "C11096",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.4118,
+      "pca_y": 0.9346
+    },
+    {
+      "customer_id": "C15316",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 2.1115,
+      "pca_y": -3.9481
+    },
+    {
+      "customer_id": "C17256",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.0931,
+      "pca_y": -2.7527
+    },
+    {
+      "customer_id": "C18388",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -1.3027,
+      "pca_y": -0.7848
+    },
+    {
+      "customer_id": "C13401",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.7811,
+      "pca_y": -0.0396
+    },
+    {
+      "customer_id": "C19003",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.3859,
+      "pca_y": 0.6125
+    },
+    {
+      "customer_id": "C19104",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.0866,
+      "pca_y": -2.1722
+    },
+    {
+      "customer_id": "C15794",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.2842,
+      "pca_y": -0.7573
+    },
+    {
+      "customer_id": "C13885",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.6553,
+      "pca_y": 0.042
+    },
+    {
+      "customer_id": "C14828",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.5477,
+      "pca_y": -3.254
+    },
+    {
+      "customer_id": "C18978",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.0628,
+      "pca_y": -1.0879
+    },
+    {
+      "customer_id": "C17561",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.1051,
+      "pca_y": 0.7136
+    },
+    {
+      "customer_id": "C10525",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.427,
+      "pca_y": 0.4128
+    },
+    {
+      "customer_id": "C18997",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.6154,
+      "pca_y": -0.7291
+    },
+    {
+      "customer_id": "C18472",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.0042,
+      "pca_y": -0.4723
+    },
+    {
+      "customer_id": "C10459",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.7133,
+      "pca_y": 0.0508
+    },
+    {
+      "customer_id": "C13321",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.4694,
+      "pca_y": 0.2241
+    },
+    {
+      "customer_id": "C11214",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 1.9034,
+      "pca_y": -1.2036
+    },
+    {
+      "customer_id": "C16283",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.2721,
+      "pca_y": -3.3258
+    },
+    {
+      "customer_id": "C16381",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.3399,
+      "pca_y": -2.2635
+    },
+    {
+      "customer_id": "C18588",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.0556,
+      "pca_y": -2.4133
+    },
+    {
+      "customer_id": "C12684",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 2.8707,
+      "pca_y": -2.4889
+    },
+    {
+      "customer_id": "C18601",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.1307,
+      "pca_y": -1.7905
+    },
+    {
+      "customer_id": "C18927",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.5071,
+      "pca_y": -0.5661
+    },
+    {
+      "customer_id": "C16087",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.1141,
+      "pca_y": -0.2417
+    },
+    {
+      "customer_id": "C15776",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.2913,
+      "pca_y": 0.183
+    },
+    {
+      "customer_id": "C12378",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": -0.9213,
+      "pca_y": -0.8974
+    },
+    {
+      "customer_id": "C14069",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.0626,
+      "pca_y": 0.1902
+    },
+    {
+      "customer_id": "C13843",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 1.0992,
+      "pca_y": -1.0641
+    },
+    {
+      "customer_id": "C12238",
+      "segment_id": 0,
+      "profile_name": "Planned Spenders",
+      "color": "#6c8a2b",
+      "pca_x": 0.0591,
+      "pca_y": -1.0097
+    },
+    {
+      "customer_id": "C11086",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.422,
+      "pca_y": 0.2423
+    },
+    {
+      "customer_id": "C18705",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.0109,
+      "pca_y": 0.4463
+    },
+    {
+      "customer_id": "C11451",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.0018,
+      "pca_y": 0.6466
+    },
+    {
+      "customer_id": "C13331",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.9255,
+      "pca_y": 0.3443
+    },
+    {
+      "customer_id": "C12119",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 2.0911,
+      "pca_y": 1.2319
+    },
+    {
+      "customer_id": "C16762",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.243,
+      "pca_y": 0.7967
+    },
+    {
+      "customer_id": "C11487",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 1.0983,
+      "pca_y": 1.3307
+    },
+    {
+      "customer_id": "C14443",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.0931,
+      "pca_y": 0.5842
+    },
+    {
+      "customer_id": "C14038",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.851,
+      "pca_y": 0.3683
+    },
+    {
+      "customer_id": "C15313",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.5651,
+      "pca_y": 1.0416
+    },
+    {
+      "customer_id": "C10844",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.9366,
+      "pca_y": 0.3101
+    },
+    {
+      "customer_id": "C10278",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.2602,
+      "pca_y": 0.0511
+    },
+    {
+      "customer_id": "C15803",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.0672,
+      "pca_y": 1.0689
+    },
+    {
+      "customer_id": "C17348",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.4011,
+      "pca_y": 0.9036
+    },
+    {
+      "customer_id": "C13421",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.2246,
+      "pca_y": 0.164
+    },
+    {
+      "customer_id": "C18275",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.2724,
+      "pca_y": 0.3035
+    },
+    {
+      "customer_id": "C11585",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.9171,
+      "pca_y": 1.332
+    },
+    {
+      "customer_id": "C15428",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.9911,
+      "pca_y": 1.7886
+    },
+    {
+      "customer_id": "C14377",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.7958,
+      "pca_y": 0.6261
+    },
+    {
+      "customer_id": "C16909",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.082,
+      "pca_y": 0.3826
+    },
+    {
+      "customer_id": "C18895",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.3201,
+      "pca_y": 0.2497
+    },
+    {
+      "customer_id": "C13739",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.0771,
+      "pca_y": 0.9357
+    },
+    {
+      "customer_id": "C11399",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.2398,
+      "pca_y": 0.478
+    },
+    {
+      "customer_id": "C18877",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.1093,
+      "pca_y": 0.4108
+    },
+    {
+      "customer_id": "C12795",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.1999,
+      "pca_y": 1.0748
+    },
+    {
+      "customer_id": "C18763",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.3617,
+      "pca_y": 0.1896
+    },
+    {
+      "customer_id": "C14233",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.5372,
+      "pca_y": 0.3053
+    },
+    {
+      "customer_id": "C11063",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.2627,
+      "pca_y": 0.2915
+    },
+    {
+      "customer_id": "C18329",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.3848,
+      "pca_y": 0.2799
+    },
+    {
+      "customer_id": "C10240",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.0769,
+      "pca_y": 1.2598
+    },
+    {
+      "customer_id": "C12571",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.567,
+      "pca_y": 0.6728
+    },
+    {
+      "customer_id": "C10086",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.0917,
+      "pca_y": 0.3527
+    },
+    {
+      "customer_id": "C11309",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.1089,
+      "pca_y": 0.3015
+    },
+    {
+      "customer_id": "C11618",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.9027,
+      "pca_y": 0.4919
+    },
+    {
+      "customer_id": "C14988",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.0154,
+      "pca_y": 0.3659
+    },
+    {
+      "customer_id": "C12866",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.4898,
+      "pca_y": 0.7746
+    },
+    {
+      "customer_id": "C16820",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.1436,
+      "pca_y": 0.3081
+    },
+    {
+      "customer_id": "C10377",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.6864,
+      "pca_y": 0.4695
+    },
+    {
+      "customer_id": "C12442",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.9753,
+      "pca_y": 0.6665
+    },
+    {
+      "customer_id": "C14544",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.8453,
+      "pca_y": 0.156
+    },
+    {
+      "customer_id": "C17998",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.2215,
+      "pca_y": 0.8473
+    },
+    {
+      "customer_id": "C16735",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.4872,
+      "pca_y": 0.4181
+    },
+    {
+      "customer_id": "C16758",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.7915,
+      "pca_y": 1.9025
+    },
+    {
+      "customer_id": "C13277",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.3692,
+      "pca_y": 0.8637
+    },
+    {
+      "customer_id": "C14669",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.6516,
+      "pca_y": 0.6605
+    },
+    {
+      "customer_id": "C14002",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.3772,
+      "pca_y": 0.6052
+    },
+    {
+      "customer_id": "C18107",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.9498,
+      "pca_y": 0.3496
+    },
+    {
+      "customer_id": "C10468",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.3739,
+      "pca_y": 0.5251
+    },
+    {
+      "customer_id": "C10524",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 1.3805,
+      "pca_y": 0.5888
+    },
+    {
+      "customer_id": "C18943",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.3287,
+      "pca_y": 0.3345
+    },
+    {
+      "customer_id": "C12322",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": 0.1417,
+      "pca_y": 0.3829
+    },
+    {
+      "customer_id": "C18704",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.3812,
+      "pca_y": 0.284
+    },
+    {
+      "customer_id": "C18614",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -1.1415,
+      "pca_y": 0.3656
+    },
+    {
+      "customer_id": "C18547",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.7363,
+      "pca_y": 0.6939
+    },
+    {
+      "customer_id": "C13890",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.6547,
+      "pca_y": 0.5211
+    },
+    {
+      "customer_id": "C10309",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.1998,
+      "pca_y": 0.1757
+    },
+    {
+      "customer_id": "C10021",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.7815,
+      "pca_y": -0.0039
+    },
+    {
+      "customer_id": "C17441",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.7698,
+      "pca_y": 0.4091
+    },
+    {
+      "customer_id": "C16794",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.9074,
+      "pca_y": 0.5605
+    },
+    {
+      "customer_id": "C11942",
+      "segment_id": 1,
+      "profile_name": "Rewards Optimizers",
+      "color": "#7a5195",
+      "pca_x": -0.551,
+      "pca_y": 0.5213
+    },
+    {
+      "customer_id": "C13029",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.8695,
+      "pca_y": -0.0023
+    },
+    {
+      "customer_id": "C14507",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.4182,
+      "pca_y": -0.1618
+    },
+    {
+      "customer_id": "C14541",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9475,
+      "pca_y": 0.0506
+    },
+    {
+      "customer_id": "C18160",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -1.3292,
+      "pca_y": 0.1871
+    },
+    {
+      "customer_id": "C17795",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.2941,
+      "pca_y": -0.5449
+    },
+    {
+      "customer_id": "C15946",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.5401,
+      "pca_y": -0.1826
+    },
+    {
+      "customer_id": "C16777",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.1091,
+      "pca_y": -0.4484
+    },
+    {
+      "customer_id": "C17830",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9149,
+      "pca_y": -0.2217
+    },
+    {
+      "customer_id": "C15933",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.3904,
+      "pca_y": -0.8988
+    },
+    {
+      "customer_id": "C14623",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9433,
+      "pca_y": -0.2146
+    },
+    {
+      "customer_id": "C17260",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.3868,
+      "pca_y": -0.3087
+    },
+    {
+      "customer_id": "C17984",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.6896,
+      "pca_y": -0.0468
+    },
+    {
+      "customer_id": "C11722",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9216,
+      "pca_y": 0.335
+    },
+    {
+      "customer_id": "C16135",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.3431,
+      "pca_y": -0.4523
+    },
+    {
+      "customer_id": "C18331",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.1283,
+      "pca_y": -0.7938
+    },
+    {
+      "customer_id": "C15177",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.4552,
+      "pca_y": -0.4857
+    },
+    {
+      "customer_id": "C14090",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9038,
+      "pca_y": -0.2552
+    },
+    {
+      "customer_id": "C15317",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9805,
+      "pca_y": 0.021
+    },
+    {
+      "customer_id": "C12171",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.4286,
+      "pca_y": -0.2001
+    },
+    {
+      "customer_id": "C13953",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9598,
+      "pca_y": -0.0145
+    },
+    {
+      "customer_id": "C10539",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.2887,
+      "pca_y": -0.6807
+    },
+    {
+      "customer_id": "C17398",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -1.1383,
+      "pca_y": -0.0147
+    },
+    {
+      "customer_id": "C12021",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.3834,
+      "pca_y": -0.1534
+    },
+    {
+      "customer_id": "C11373",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.3301,
+      "pca_y": -0.231
+    },
+    {
+      "customer_id": "C15941",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.6186,
+      "pca_y": -0.7377
+    },
+    {
+      "customer_id": "C11381",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.288,
+      "pca_y": -0.5376
+    },
+    {
+      "customer_id": "C17383",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.2338,
+      "pca_y": -0.4269
+    },
+    {
+      "customer_id": "C17080",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.7642,
+      "pca_y": -0.0354
+    },
+    {
+      "customer_id": "C15536",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.4395,
+      "pca_y": -0.1697
+    },
+    {
+      "customer_id": "C11913",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.1662,
+      "pca_y": -0.1058
+    },
+    {
+      "customer_id": "C11232",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -1.1885,
+      "pca_y": -0.0683
+    },
+    {
+      "customer_id": "C14248",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.3466,
+      "pca_y": -0.3167
+    },
+    {
+      "customer_id": "C17130",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.6575,
+      "pca_y": -0.4664
+    },
+    {
+      "customer_id": "C17123",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -1.1,
+      "pca_y": 0.0646
+    },
+    {
+      "customer_id": "C11681",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.5572,
+      "pca_y": -0.4408
+    },
+    {
+      "customer_id": "C18224",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.7902,
+      "pca_y": -0.0792
+    },
+    {
+      "customer_id": "C13439",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.4908,
+      "pca_y": -0.4572
+    },
+    {
+      "customer_id": "C14053",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.8953,
+      "pca_y": -0.02
+    },
+    {
+      "customer_id": "C17053",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9418,
+      "pca_y": 0.3166
+    },
+    {
+      "customer_id": "C13428",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.489,
+      "pca_y": 0.0121
+    },
+    {
+      "customer_id": "C11051",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.7853,
+      "pca_y": -0.0814
+    },
+    {
+      "customer_id": "C16926",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.2284,
+      "pca_y": -0.2057
+    },
+    {
+      "customer_id": "C10619",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.4645,
+      "pca_y": 0.1295
+    },
+    {
+      "customer_id": "C11540",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.6475,
+      "pca_y": -0.6912
+    },
+    {
+      "customer_id": "C18554",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -1.1611,
+      "pca_y": -0.0317
+    },
+    {
+      "customer_id": "C11017",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.6803,
+      "pca_y": 0.1367
+    },
+    {
+      "customer_id": "C17523",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.7955,
+      "pca_y": 0.1654
+    },
+    {
+      "customer_id": "C11102",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.3909,
+      "pca_y": -0.3028
+    },
+    {
+      "customer_id": "C13083",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.4583,
+      "pca_y": -0.0548
+    },
+    {
+      "customer_id": "C11358",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -1.0903,
+      "pca_y": 0.1024
+    },
+    {
+      "customer_id": "C16880",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9772,
+      "pca_y": 0.2555
+    },
+    {
+      "customer_id": "C16216",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.1847,
+      "pca_y": -0.5814
+    },
+    {
+      "customer_id": "C18793",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.9562,
+      "pca_y": -0.065
+    },
+    {
+      "customer_id": "C12873",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.9898,
+      "pca_y": -0.7316
+    },
+    {
+      "customer_id": "C14735",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 0.6054,
+      "pca_y": -1.0049
+    },
+    {
+      "customer_id": "C17809",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.6913,
+      "pca_y": -0.0492
+    },
+    {
+      "customer_id": "C11563",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.1963,
+      "pca_y": -0.5285
+    },
+    {
+      "customer_id": "C16158",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": -0.204,
+      "pca_y": -0.527
+    },
+    {
+      "customer_id": "C15951",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 1.7144,
+      "pca_y": -1.5997
+    },
+    {
+      "customer_id": "C15523",
+      "segment_id": 2,
+      "profile_name": "Everyday Users",
+      "color": "#bf4d28",
+      "pca_x": 1.3587,
+      "pca_y": -1.4231
+    },
+    {
+      "customer_id": "C16182",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.3682,
+      "pca_y": -1.7759
+    },
+    {
+      "customer_id": "C16653",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.1606,
+      "pca_y": -0.2065
+    },
+    {
+      "customer_id": "C15303",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.9296,
+      "pca_y": -1.6603
+    },
+    {
+      "customer_id": "C18676",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.5072,
+      "pca_y": -0.7746
+    },
+    {
+      "customer_id": "C14089",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.0851,
+      "pca_y": -0.5111
+    },
+    {
+      "customer_id": "C15374",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.9525,
+      "pca_y": -0.43
+    },
+    {
+      "customer_id": "C19075",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.4574,
+      "pca_y": -0.5274
+    },
+    {
+      "customer_id": "C15560",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.8806,
+      "pca_y": 0.1203
+    },
+    {
+      "customer_id": "C18320",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.2596,
+      "pca_y": -2.1434
+    },
+    {
+      "customer_id": "C18364",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.186,
+      "pca_y": 0.1195
+    },
+    {
+      "customer_id": "C17158",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.0364,
+      "pca_y": -1.1524
+    },
+    {
+      "customer_id": "C19187",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.8031,
+      "pca_y": -1.4886
+    },
+    {
+      "customer_id": "C18542",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.3792,
+      "pca_y": -0.0218
+    },
+    {
+      "customer_id": "C19036",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.7293,
+      "pca_y": -1.3559
+    },
+    {
+      "customer_id": "C17525",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.363,
+      "pca_y": -0.1226
+    },
+    {
+      "customer_id": "C18236",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.3178,
+      "pca_y": -1.5262
+    },
+    {
+      "customer_id": "C13862",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.4191,
+      "pca_y": -1.4953
+    },
+    {
+      "customer_id": "C19113",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.39,
+      "pca_y": -1.2097
+    },
+    {
+      "customer_id": "C16310",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.24,
+      "pca_y": -0.7258
+    },
+    {
+      "customer_id": "C11317",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.7421,
+      "pca_y": -0.1343
+    },
+    {
+      "customer_id": "C15487",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.0294,
+      "pca_y": 0.1568
+    },
+    {
+      "customer_id": "C19027",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.1695,
+      "pca_y": 0.0137
+    },
+    {
+      "customer_id": "C15078",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.3479,
+      "pca_y": -1.7257
+    },
+    {
+      "customer_id": "C18455",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.5252,
+      "pca_y": -0.8313
+    },
+    {
+      "customer_id": "C18784",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.3421,
+      "pca_y": -0.3751
+    },
+    {
+      "customer_id": "C19116",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.6783,
+      "pca_y": -0.9095
+    },
+    {
+      "customer_id": "C18378",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.5735,
+      "pca_y": -0.6756
+    },
+    {
+      "customer_id": "C12059",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.1764,
+      "pca_y": -0.4202
+    },
+    {
+      "customer_id": "C12512",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.5971,
+      "pca_y": -1.162
+    },
+    {
+      "customer_id": "C19099",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.8433,
+      "pca_y": -1.9348
+    },
+    {
+      "customer_id": "C15046",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.2312,
+      "pca_y": -1.5544
+    },
+    {
+      "customer_id": "C18072",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.4636,
+      "pca_y": -1.5018
+    },
+    {
+      "customer_id": "C18996",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.0449,
+      "pca_y": -2.75
+    },
+    {
+      "customer_id": "C15337",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.0324,
+      "pca_y": -1.1899
+    },
+    {
+      "customer_id": "C16959",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.3707,
+      "pca_y": -0.4913
+    },
+    {
+      "customer_id": "C11210",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.4105,
+      "pca_y": -1.3427
+    },
+    {
+      "customer_id": "C19168",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.7923,
+      "pca_y": -1.4989
+    },
+    {
+      "customer_id": "C19148",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.6957,
+      "pca_y": -1.2303
+    },
+    {
+      "customer_id": "C14523",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.9057,
+      "pca_y": -0.7059
+    },
+    {
+      "customer_id": "C18929",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.1884,
+      "pca_y": -1.1273
+    },
+    {
+      "customer_id": "C11791",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.3696,
+      "pca_y": -0.3736
+    },
+    {
+      "customer_id": "C17182",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.6929,
+      "pca_y": -1.5611
+    },
+    {
+      "customer_id": "C19070",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.4203,
+      "pca_y": -0.5367
+    },
+    {
+      "customer_id": "C10326",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.2917,
+      "pca_y": -0.311
+    },
+    {
+      "customer_id": "C19014",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.3568,
+      "pca_y": 0.0868
+    },
+    {
+      "customer_id": "C19151",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.6481,
+      "pca_y": -1.2011
+    },
+    {
+      "customer_id": "C13663",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.7247,
+      "pca_y": -1.626
+    },
+    {
+      "customer_id": "C12019",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.462,
+      "pca_y": -0.4806
+    },
+    {
+      "customer_id": "C19174",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.5187,
+      "pca_y": -1.6743
+    },
+    {
+      "customer_id": "C19096",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.553,
+      "pca_y": -1.0809
+    },
+    {
+      "customer_id": "C12260",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.8415,
+      "pca_y": -0.8736
+    },
+    {
+      "customer_id": "C19118",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.6967,
+      "pca_y": -0.9356
+    },
+    {
+      "customer_id": "C17487",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.9712,
+      "pca_y": -1.0918
+    },
+    {
+      "customer_id": "C18595",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.388,
+      "pca_y": -0.2226
+    },
+    {
+      "customer_id": "C16656",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.739,
+      "pca_y": -0.7771
+    },
+    {
+      "customer_id": "C19143",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.6988,
+      "pca_y": -1.2254
+    },
+    {
+      "customer_id": "C19142",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.7045,
+      "pca_y": -1.4712
+    },
+    {
+      "customer_id": "C17002",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.2353,
+      "pca_y": -0.9883
+    },
+    {
+      "customer_id": "C12900",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -0.3041,
+      "pca_y": -2.5206
+    },
+    {
+      "customer_id": "C19165",
+      "segment_id": 3,
+      "profile_name": "Budget Watchers",
+      "color": "#1f7a8c",
+      "pca_x": -1.59,
+      "pca_y": -1.5439
+    },
+    {
+      "customer_id": "C11506",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 5.4126,
+      "pca_y": 2.3448
+    },
+    {
+      "customer_id": "C10679",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 1.0562,
+      "pca_y": 0.2357
+    },
+    {
+      "customer_id": "C12310",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 6.8485,
+      "pca_y": -3.9294
+    },
+    {
+      "customer_id": "C14400",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 6.7754,
+      "pca_y": 6.9315
+    },
+    {
+      "customer_id": "C10040",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 4.5769,
+      "pca_y": 0.0191
+    },
+    {
+      "customer_id": "C10885",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 12.1536,
+      "pca_y": 1.2384
+    },
+    {
+      "customer_id": "C11501",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 3.3404,
+      "pca_y": -0.5747
+    },
+    {
+      "customer_id": "C13802",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 10.4683,
+      "pca_y": 9.3642
+    },
+    {
+      "customer_id": "C10523",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 17.0888,
+      "pca_y": 12.1218
+    },
+    {
+      "customer_id": "C11657",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 14.5854,
+      "pca_y": 13.1129
+    },
+    {
+      "customer_id": "C15875",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 4.7014,
+      "pca_y": -2.4341
+    },
+    {
+      "customer_id": "C11300",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 14.5935,
+      "pca_y": 13.2047
+    },
+    {
+      "customer_id": "C17450",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 10.144,
+      "pca_y": -5.3903
+    },
+    {
+      "customer_id": "C13231",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 3.3173,
+      "pca_y": -2.5569
+    },
+    {
+      "customer_id": "C10534",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 6.2577,
+      "pca_y": 4.91
+    },
+    {
+      "customer_id": "C10284",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 11.394,
+      "pca_y": 10.3964
+    },
+    {
+      "customer_id": "C10635",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 7.7906,
+      "pca_y": -2.6022
+    },
+    {
+      "customer_id": "C10975",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 7.9165,
+      "pca_y": 6.2106
+    },
+    {
+      "customer_id": "C12046",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 6.7754,
+      "pca_y": -1.4576
+    },
+    {
+      "customer_id": "C13655",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 9.5499,
+      "pca_y": -4.6967
+    },
+    {
+      "customer_id": "C10578",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 3.4719,
+      "pca_y": -1.5114
+    },
+    {
+      "customer_id": "C13914",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 12.0118,
+      "pca_y": -4.7743
+    },
+    {
+      "customer_id": "C15139",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 2.7616,
+      "pca_y": -0.1442
+    },
+    {
+      "customer_id": "C11076",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 4.1464,
+      "pca_y": 1.1193
+    },
+    {
+      "customer_id": "C11234",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 9.1331,
+      "pca_y": 7.9296
+    },
+    {
+      "customer_id": "C10529",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 10.0765,
+      "pca_y": 8.9584
+    },
+    {
+      "customer_id": "C13755",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 8.4227,
+      "pca_y": 5.5378
+    },
+    {
+      "customer_id": "C14018",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 9.0122,
+      "pca_y": -3.2825
+    },
+    {
+      "customer_id": "C11094",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 13.434,
+      "pca_y": -6.1079
+    },
+    {
+      "customer_id": "C15041",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 5.0908,
+      "pca_y": 0.1678
+    },
+    {
+      "customer_id": "C10504",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 5.0056,
+      "pca_y": -2.6705
+    },
+    {
+      "customer_id": "C14048",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 11.8309,
+      "pca_y": 11.6147
+    },
+    {
+      "customer_id": "C10285",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 6.8221,
+      "pca_y": -3.7935
+    },
+    {
+      "customer_id": "C11612",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 8.7914,
+      "pca_y": 7.0027
+    },
+    {
+      "customer_id": "C11825",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 5.9769,
+      "pca_y": 5.0343
+    },
+    {
+      "customer_id": "C10593",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 2.477,
+      "pca_y": -1.6786
+    },
+    {
+      "customer_id": "C11695",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 9.5569,
+      "pca_y": 10.0133
+    },
+    {
+      "customer_id": "C11266",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 3.5327,
+      "pca_y": 0.2449
+    },
+    {
+      "customer_id": "C10352",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 8.0949,
+      "pca_y": -0.9135
+    },
+    {
+      "customer_id": "C15407",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 7.8086,
+      "pca_y": 6.5914
+    },
+    {
+      "customer_id": "C10914",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 11.9738,
+      "pca_y": -6.7317
+    },
+    {
+      "customer_id": "C10659",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 7.3355,
+      "pca_y": -1.1422
+    },
+    {
+      "customer_id": "C14795",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 10.1104,
+      "pca_y": 2.2969
+    },
+    {
+      "customer_id": "C10874",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 2.7762,
+      "pca_y": -0.2897
+    },
+    {
+      "customer_id": "C12273",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 2.5863,
+      "pca_y": 0.9625
+    },
+    {
+      "customer_id": "C10568",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 3.1711,
+      "pca_y": 2.4645
+    },
+    {
+      "customer_id": "C10818",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 5.9161,
+      "pca_y": -3.2778
+    },
+    {
+      "customer_id": "C10188",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 5.9906,
+      "pca_y": -3.7961
+    },
+    {
+      "customer_id": "C10611",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 9.7951,
+      "pca_y": 9.5661
+    },
+    {
+      "customer_id": "C11495",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 10.0012,
+      "pca_y": 7.3882
+    },
+    {
+      "customer_id": "C10375",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 6.023,
+      "pca_y": 0.1542
+    },
+    {
+      "customer_id": "C14536",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 4.3303,
+      "pca_y": 0.6363
+    },
+    {
+      "customer_id": "C10337",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 5.9608,
+      "pca_y": 1.5996
+    },
+    {
+      "customer_id": "C17237",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 12.9748,
+      "pca_y": 9.4584
+    },
+    {
+      "customer_id": "C11378",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 4.2378,
+      "pca_y": -0.991
+    },
+    {
+      "customer_id": "C16546",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 11.096,
+      "pca_y": -4.103
+    },
+    {
+      "customer_id": "C12528",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 10.3293,
+      "pca_y": -6.4739
+    },
+    {
+      "customer_id": "C18177",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 4.9225,
+      "pca_y": -1.2904
+    },
+    {
+      "customer_id": "C12286",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 1.6386,
+      "pca_y": 1.4559
+    },
+    {
+      "customer_id": "C11638",
+      "segment_id": 4,
+      "profile_name": "High-Value Power Users",
+      "color": "#ffa600",
+      "pca_x": 11.223,
+      "pca_y": 7.7738
+    },
+    {
+      "customer_id": "C11025",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.3449,
+      "pca_y": 0.5426
+    },
+    {
+      "customer_id": "C11344",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.045,
+      "pca_y": 1.0943
+    },
+    {
+      "customer_id": "C11628",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.5967,
+      "pca_y": -0.5811
+    },
+    {
+      "customer_id": "C17418",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.1708,
+      "pca_y": 0.4445
+    },
+    {
+      "customer_id": "C13376",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 3.3298,
+      "pca_y": 2.9973
+    },
+    {
+      "customer_id": "C13925",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.5235,
+      "pca_y": -0.5181
+    },
+    {
+      "customer_id": "C10894",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.1992,
+      "pca_y": 0.4028
+    },
+    {
+      "customer_id": "C12140",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.039,
+      "pca_y": 1.079
+    },
+    {
+      "customer_id": "C14000",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.8115,
+      "pca_y": -0.2977
+    },
+    {
+      "customer_id": "C11446",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.0371,
+      "pca_y": -0.2007
+    },
+    {
+      "customer_id": "C10622",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.8851,
+      "pca_y": 0.01
+    },
+    {
+      "customer_id": "C14676",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.8303,
+      "pca_y": 0.399
+    },
+    {
+      "customer_id": "C11143",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.2276,
+      "pca_y": 0.1583
+    },
+    {
+      "customer_id": "C11912",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 6.5128,
+      "pca_y": 1.2379
+    },
+    {
+      "customer_id": "C15057",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.8463,
+      "pca_y": 0.201
+    },
+    {
+      "customer_id": "C14574",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.152,
+      "pca_y": 0.2328
+    },
+    {
+      "customer_id": "C14350",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 3.904,
+      "pca_y": 0.4992
+    },
+    {
+      "customer_id": "C13107",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.4224,
+      "pca_y": 0.4968
+    },
+    {
+      "customer_id": "C14834",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.1778,
+      "pca_y": -0.172
+    },
+    {
+      "customer_id": "C15731",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 3.4129,
+      "pca_y": 3.4104
+    },
+    {
+      "customer_id": "C15766",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.8025,
+      "pca_y": -1.7948
+    },
+    {
+      "customer_id": "C16465",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.0072,
+      "pca_y": 1.8363
+    },
+    {
+      "customer_id": "C12954",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.5137,
+      "pca_y": 0.3285
+    },
+    {
+      "customer_id": "C12367",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.8597,
+      "pca_y": 0.055
+    },
+    {
+      "customer_id": "C10461",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.2489,
+      "pca_y": -0.1289
+    },
+    {
+      "customer_id": "C12597",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 3.3707,
+      "pca_y": 3.7453
+    },
+    {
+      "customer_id": "C10766",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.2851,
+      "pca_y": -0.9824
+    },
+    {
+      "customer_id": "C17706",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.9026,
+      "pca_y": -0.6883
+    },
+    {
+      "customer_id": "C16999",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.4335,
+      "pca_y": 0.686
+    },
+    {
+      "customer_id": "C12805",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.2361,
+      "pca_y": -0.7428
+    },
+    {
+      "customer_id": "C15321",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.6624,
+      "pca_y": -0.3168
+    },
+    {
+      "customer_id": "C10750",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 4.6511,
+      "pca_y": -2.4611
+    },
+    {
+      "customer_id": "C11844",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.8881,
+      "pca_y": 0.7
+    },
+    {
+      "customer_id": "C18299",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.745,
+      "pca_y": 0.719
+    },
+    {
+      "customer_id": "C15805",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.2083,
+      "pca_y": 0.1315
+    },
+    {
+      "customer_id": "C12115",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 4.9138,
+      "pca_y": 1.5699
+    },
+    {
+      "customer_id": "C12773",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 5.482,
+      "pca_y": -2.5666
+    },
+    {
+      "customer_id": "C16743",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.8168,
+      "pca_y": -1.3165
+    },
+    {
+      "customer_id": "C14799",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.1092,
+      "pca_y": 0.8337
+    },
+    {
+      "customer_id": "C13411",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -1.0352,
+      "pca_y": 0.4991
+    },
+    {
+      "customer_id": "C13344",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.3271,
+      "pca_y": 0.2703
+    },
+    {
+      "customer_id": "C16976",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.3625,
+      "pca_y": 1.2415
+    },
+    {
+      "customer_id": "C15580",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.6355,
+      "pca_y": 0.4825
+    },
+    {
+      "customer_id": "C14033",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.7633,
+      "pca_y": -0.3073
+    },
+    {
+      "customer_id": "C18390",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.3485,
+      "pca_y": -0.0052
+    },
+    {
+      "customer_id": "C13067",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.1286,
+      "pca_y": -1.2708
+    },
+    {
+      "customer_id": "C12097",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.8849,
+      "pca_y": -0.8668
+    },
+    {
+      "customer_id": "C16914",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.9574,
+      "pca_y": -0.6316
+    },
+    {
+      "customer_id": "C12305",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.3798,
+      "pca_y": 0.088
+    },
+    {
+      "customer_id": "C13410",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.0922,
+      "pca_y": 0.164
+    },
+    {
+      "customer_id": "C18683",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.2838,
+      "pca_y": -1.5739
+    },
+    {
+      "customer_id": "C10681",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 2.6283,
+      "pca_y": 2.7194
+    },
+    {
+      "customer_id": "C15196",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 3.0352,
+      "pca_y": 2.0172
+    },
+    {
+      "customer_id": "C13995",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.8386,
+      "pca_y": 0.7961
+    },
+    {
+      "customer_id": "C14779",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.867,
+      "pca_y": 0.3824
+    },
+    {
+      "customer_id": "C15159",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 5.0093,
+      "pca_y": 1.7329
+    },
+    {
+      "customer_id": "C11082",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 0.271,
+      "pca_y": 0.7993
+    },
+    {
+      "customer_id": "C14876",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.0891,
+      "pca_y": -0.0005
+    },
+    {
+      "customer_id": "C15145",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": 1.8105,
+      "pca_y": -1.0475
+    },
+    {
+      "customer_id": "C18836",
+      "segment_id": 5,
+      "profile_name": "Premium Flex",
+      "color": "#ef5675",
+      "pca_x": -0.6935,
+      "pca_y": 0.5294
+    }
+  ],
+  "generated_at": "2026-03-10T23:46:29.606767+00:00",
+  "profile_source": "/opt/airflow/dags/data/profile_to_score.csv"
+}

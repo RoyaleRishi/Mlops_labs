@@ -1,0 +1,20 @@
+[2026-03-10T23:46:31.489+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T23:46:31.501+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: customer_segmentation_dashboard_lab.score_custom_profile manual__2026-03-10T23:45:49.978526+00:00 [queued]>
+[2026-03-10T23:46:31.506+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: customer_segmentation_dashboard_lab.score_custom_profile manual__2026-03-10T23:45:49.978526+00:00 [queued]>
+[2026-03-10T23:46:31.506+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-10T23:46:31.515+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): score_custom_profile> on 2026-03-10 23:45:49.978526+00:00
+[2026-03-10T23:46:31.523+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=175) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-03-10T23:46:31.524+0000] {standard_task_runner.py:63} INFO - Started process 185 to run task
+[2026-03-10T23:46:31.524+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'customer_segmentation_dashboard_lab', 'score_custom_profile', 'manual__2026-03-10T23:45:49.978526+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmpeweojta7']
+[2026-03-10T23:46:31.526+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask score_custom_profile
+[2026-03-10T23:46:31.550+0000] {task_command.py:426} INFO - Running <TaskInstance: customer_segmentation_dashboard_lab.score_custom_profile manual__2026-03-10T23:45:49.978526+00:00 [running]> on host 848bb6b27813
+[2026-03-10T23:46:31.599+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Rishi' AIRFLOW_CTX_DAG_ID='customer_segmentation_dashboard_lab' AIRFLOW_CTX_TASK_ID='score_custom_profile' AIRFLOW_CTX_EXECUTION_DATE='2026-03-10T23:45:49.978526+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-10T23:45:49.978526+00:00'
+[2026-03-10T23:46:31.600+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T23:46:31.618+0000] {python.py:237} INFO - Done. Returned value was: {'segment_id': 5, 'profile_name': 'Premium Flex', 'confidence': 0.9997, 'profile_source': '/opt/***/dags/data/profile_to_score.csv', 'profile_input': {'BALANCE': 3202.47, 'PURCHASES': 124.5, 'CREDIT_LIMIT': 7500.0, 'PAYMENTS': 4103.03, 'TENURE': 12.0, 'CASH_ADVANCE': 6442.95}}
+[2026-03-10T23:46:31.618+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T23:46:31.629+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=customer_segmentation_dashboard_lab, task_id=score_custom_profile, run_id=manual__2026-03-10T23:45:49.978526+00:00, execution_date=20260310T234549, start_date=20260310T234631, end_date=20260310T234631
+[2026-03-10T23:46:31.664+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-03-10T23:46:31.676+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T23:46:31.677+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

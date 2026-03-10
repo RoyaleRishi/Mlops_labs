@@ -1,0 +1,20 @@
+[2026-03-10T23:45:56.825+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T23:45:56.836+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: customer_segmentation_dashboard_lab.train_segmentation_model manual__2026-03-10T23:45:49.978526+00:00 [queued]>
+[2026-03-10T23:45:56.841+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: customer_segmentation_dashboard_lab.train_segmentation_model manual__2026-03-10T23:45:49.978526+00:00 [queued]>
+[2026-03-10T23:45:56.841+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-10T23:45:56.848+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_segmentation_model> on 2026-03-10 23:45:49.978526+00:00
+[2026-03-10T23:45:56.852+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=135) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-03-10T23:45:56.853+0000] {standard_task_runner.py:63} INFO - Started process 145 to run task
+[2026-03-10T23:45:56.854+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'customer_segmentation_dashboard_lab', 'train_segmentation_model', 'manual__2026-03-10T23:45:49.978526+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmp5dapqm9a']
+[2026-03-10T23:45:56.855+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask train_segmentation_model
+[2026-03-10T23:45:56.879+0000] {task_command.py:426} INFO - Running <TaskInstance: customer_segmentation_dashboard_lab.train_segmentation_model manual__2026-03-10T23:45:49.978526+00:00 [running]> on host 848bb6b27813
+[2026-03-10T23:45:56.927+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Rishi' AIRFLOW_CTX_DAG_ID='customer_segmentation_dashboard_lab' AIRFLOW_CTX_TASK_ID='train_segmentation_model' AIRFLOW_CTX_EXECUTION_DATE='2026-03-10T23:45:49.978526+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-10T23:45:49.978526+00:00'
+[2026-03-10T23:45:56.927+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T23:46:29.634+0000] {python.py:237} INFO - Done. Returned value was: {'model_path': '/opt/***/dags/model/customer_segmentation_model.pkl', 'summary_path': '/opt/***/working_data/customer_segmentation_summary.json', 'segment_csv_path': '/opt/***/working_data/customer_segmentation_segments.csv', 'selected_components': 6, 'silhouette_score': 0.0657}
+[2026-03-10T23:46:29.640+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T23:46:29.659+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=customer_segmentation_dashboard_lab, task_id=train_segmentation_model, run_id=manual__2026-03-10T23:45:49.978526+00:00, execution_date=20260310T234549, start_date=20260310T234556, end_date=20260310T234629
+[2026-03-10T23:46:29.688+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-03-10T23:46:29.702+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T23:46:29.703+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
