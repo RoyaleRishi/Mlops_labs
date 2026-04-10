@@ -1,6 +1,6 @@
-# C2W4 Lab 1 — Weather Data Feature Engineering (Modified)
+# C2W4 Lab: Weather Data Feature Engineering (Modified)
 
-Modified version of the [C2W4 Lab 1](https://github.com/https-deeplearning-ai/machine-learning-engineering-for-production-public/tree/main/course2/week4-ungraded-labs) feature engineering lab using `tf.Transform` + Apache Beam on the Jena Climate Dataset.
+Modified version of the [C2W4 Lab 1](https://github.com/https-deeplearning-ai/machine-learning-engineering-for-production-public/tree/main/course2/week4-ungraded-labs) feature engineering on the Jena Climate Dataset.
 
 ## Changes from Base Lab
 
@@ -25,11 +25,5 @@ Modified version of the [C2W4 Lab 1](https://github.com/https-deeplearning-ai/ma
 ## Usage
 
 ```bash
-pip install -r requirements.txt
-
-# Download dataset
-# https://storage.googleapis.com/tensorflow/tf-keras-datasets/jena_climate_2009_2016.csv.zip
-mkdir -p data && mv jena_climate_2009_2016.csv data/
-
 jupyter notebook C2_W4_Lab_1_WeatherData_WindSpeed.ipynb
 ```
